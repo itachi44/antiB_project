@@ -16,9 +16,13 @@ addBtn.addEventListener('click', function (e) {
     let r1 = document.querySelector('#sensible_1');
     let r2 = document.querySelector('#intermediaire_1');
     let r3 = document.querySelector('#resistant_1');
+    let germe1_identifie = document.querySelector('#germe1_identifie').value;
 
     if (antibiotiqueValue === "") {
-        alert('entrer une valeur');
+        alert('entrer la valeur de l\'antibiotique');
+    }
+    else if (germe1_identifie == "") {
+        alert('germe manquant!');
     } else {
         if (r1.checked == true) {
             antiB_result.push({ "germe": "", "antibiotique": "", "resultat": true })
