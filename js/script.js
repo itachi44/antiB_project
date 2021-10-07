@@ -25,20 +25,23 @@ addBtn.addEventListener('click', function (e) {
         alert('germe manquant!');
     } else {
         if (r1.checked == true) {
-            antiB_result.push({ "germe": "", "antibiotique": "", "resultat": true })
+            antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true })
             r1.checked = false
 
         } else if (r2.checked == true) {
-            antiB_result.push({ "germe": "", "antibiotique": "", "resultat": true })
+            antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true })
             r1.checked = false
 
 
         } else if (r3.checked == true) {
-            antiB_result.push({ "germe": "", "antibiotique": "", "resultat": true })
+            antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true })
             r1.checked = false
 
         }
         document.querySelector('#antibiotique_1').value = "";
+
+        //TODO Mettre à jour la datatable
+        console.log(antiB_result)
 
     }
 });
