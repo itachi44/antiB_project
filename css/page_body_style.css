@@ -1,0 +1,47 @@
+
+    #div_publication{
+      border-radius: 10px;
+      border-width: 5px;
+      border-color: gray;
+  }
+  .class_publciation{
+      box-shadow: 1px 1px 8px #555; 
+      border-radius: 10px;
+      text-decoration: none;
+      padding: 9px;
+      border-width: 2px;
+      font-weight: bold;
+      border-color: gray;  
+      background: rgba(0,0,0,0.05);  
+  }
+  .class_publciation:hover{
+       background: rgba(0,0,0,0.2);  
+  }
+  .class_pub_table_td{
+      text-align: center;
+  }
+  
+#fermer
+  {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background: rgba(255,2,2,0.3);
+      padding: 4px;
+      border-radius: 0px;
+  }
+
+  #fermer:hover{
+      text-decoration: none;
+      background: rgba(255,2,2,0.8);
+  }  
+  
+  #div_resultats_boi{
+    font-weight: normal;
+  }
+  
+  table caption{
+    font-weight: bold ;
+    color : gray;
+    font-style: italic;
+  } 

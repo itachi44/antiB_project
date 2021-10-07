@@ -1,0 +1,17 @@
+$.blockUI({
+    message: $(‘#div_resultats_boi’),
+    css: {
+      top: ’10%’,
+      bottom: ‘1%’,
+      left: ‘13%’,
+      right: ‘13%’,
+      width: ‘70%’,    
+      height: ‘300px’,    
+      padding: ‘auto’,
+      ‘padding-bottom’: ‘10px’,
+      ‘border-radius’: ‘0px’,
+      cursor: ‘default’,
+      display: ‘block’,
+      overflow: ‘auto’       
+    }
+  });
