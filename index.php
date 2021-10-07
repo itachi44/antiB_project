@@ -519,29 +519,7 @@
                                     <!-- new_part_1 -->
 
                                     <!-- info_patient_germe START -->
-                                    <table class="ipg" style="display:none; width:100%; border-spacing: 7px;" id="second">
-                                        <tr>
-                                            <td><label id="label_code_patient_ipg" for="code_patient_ipg">Code patient </label></td>
-                                            <td><input type="text" id="code_patient_ipg" name="code_patient_ipg" class="inputs2" /></td>
-                                            <td><label id="label_date_reception_ipg" for="date_reception_ipg">Date de réception au labo</label></td>
-                                            <td>
-                                                <input type="text" id="date_reception_ipg" name="date_reception_ipg" class="inputs2" />
-                                                <script type="text/javascript">
-                                                    new JsDatePick({
-                                                        useMode: 2,
-                                                        target: "date_reception_lab",
-                                                        dateFormat: "%Y-%m-%d"
-                                                    });
-                                                </script>
-                                                <a href="javascript:void(0);" class="class_button_clear" onclick="$('#date_reception_ipg').val('');">
-                                                    <img src="images/clear.png" class="class_clear_img" />
-                                                </a>
 
-                                            </td>
-                                            <td><label id="label_germe_ipg" for="code_germe_ipg">Code germe </label></td>
-                                            <td><input type="text" id="code_germe_ipg" name="code_germe_ipg" class="inputs2" /></td>
-                                        </tr>
-                                    </table>
                                     <br>
                                     <table class="ipg" style="display:none; width:100%; border-spacing: 7px;" id="first">
                                         <tr>

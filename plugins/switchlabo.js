@@ -163,11 +163,11 @@ $(document).ready(function () {
 		if ($(this).val() == "oui") {
 			var x = document.getElementsByClassName("ipg");
 			x[0].style.display = "table";
-			x[1].style.display = "table";
+			//x[1].style.display = "table";
 		} else {
 			var x = document.getElementsByClassName("ipg");
 			x[0].style.display = "none";
-			x[1].style.display = "none";
+			//x[1].style.display = "none";
 
 		}
 	});
