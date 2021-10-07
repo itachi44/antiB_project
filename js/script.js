@@ -37,6 +37,9 @@ addBtn.addEventListener('click', function (e) {
             antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true })
             r1.checked = false
 
+        } else {
+            alert('resultat manquant!');
+
         }
         document.querySelector('#antibiotique_1').value = "";
 
