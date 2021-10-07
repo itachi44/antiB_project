@@ -27,15 +27,18 @@ addBtn.addEventListener('click', function (e) {
         if (r1.checked == true) {
             antiB_result.push({ "germe": "", "antibiotique": "", "resultat": true })
             r1.checked = false
+
         } else if (r2.checked == true) {
             antiB_result.push({ "germe": "", "antibiotique": "", "resultat": true })
             r1.checked = false
+
 
         } else if (r3.checked == true) {
             antiB_result.push({ "germe": "", "antibiotique": "", "resultat": true })
             r1.checked = false
 
         }
-        //TODO réinitialiser les champs : antibiotique_1, et les radios
+        document.querySelector('#antibiotique_1').value = "";
+
     }
 });
