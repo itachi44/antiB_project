@@ -55,16 +55,30 @@ addBtn.addEventListener('click', function (e) {
             r1.checked = false
 
         } else if (r2.checked == true) {
-            antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true })
-            r1.checked = false
-            dataSet.push([germe1_identifie, antibiotiqueValue, "intermédiaire"])
+
+            if( germe1_identifie == ""){
+                antiB_result.push({ "germe": germe1_non_identifie, "antibiotique": antibiotiqueValue, "resultat": true });
+                r1.checked = false
+                dataSet.push([germe1_non_identifie, antibiotiqueValue, "intermédiaire"]);
+            }
+            else {
+                antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true });
+                r1.checked = false
+                dataSet.push([germe1_identifie, antibiotiqueValue, "intermédiaire"]);
+            }
 
 
         } else if (r3.checked == true) {
-            antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true })
-            r1.checked = false
-            dataSet.push([germe1_identifie, antibiotiqueValue, "résistant"])
-
+            if( germe1_identifie == ""){
+                antiB_result.push({ "germe": germe1_non_identifie, "antibiotique": antibiotiqueValue, "resultat": true });
+                r1.checked = false
+                dataSet.push([germe1_non_identifie, antibiotiqueValue, "résistant"]);
+            }
+            else {
+                antiB_result.push({ "germe": germe1_identifie, "antibiotique": antibiotiqueValue, "resultat": true });
+                r1.checked = false
+                dataSet.push([germe1_identifie, antibiotiqueValue, "résistant"]);
+            }
         } else {
             alert('resultat manquant!');
 
@@ -75,9 +89,6 @@ addBtn.addEventListener('click', function (e) {
         r1.checked = false;
         r2.checked = false;
         r3.checked = false;
-
-
-
 
         //TODO Mettre à jour la datatable
         $('#dataTable1').DataTable().destroy();
