@@ -13,10 +13,9 @@
     <link rel="stylesheet" type="text/css" media="all" href="css/styles_labo.css?1.1" />
     <!-- <script type="text/javascript" src="js/kedougou.js?2.7"></script>   -->
     <script type="text/javascript" src="js/globale.js"></script>
-    <link rel="stylesheet" type="text/css" href="plugins/datatables/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="plugins/datatables/dataTables.responsive.css">
-    <script type="text/javascript" language="javascript" src="plugins/datatables/jquery.dataTables.js"></script>
-    <script type="text/javascript" language="javascript" src="plugins/datatables/dataTables.responsive.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
     <script type="text/javascript" language="javascript" src="plugins/switchlabo.js"></script>
     <script type="text/javascript" language="javascript" src="plugins/laboControl.js"></script>
     <script type="text/javascript" language="javascript" src="plugins/submitControl.js"></script>
@@ -544,6 +543,8 @@
 
                                         </tr>
                                     </table>
+                                    <br><br>
+                                    <table id="dataTable1" class="display" width="100%"></table>
 
                                     <!-- info_patient_germe END-->
 
@@ -1718,11 +1719,12 @@
     <script src="plugins/alertify/alertify.min.js"></script>
     <link rel="stylesheet" href="plugins/alertify/alertify.core.css" />
     <link rel="stylesheet" href="plugins/alertify/alertify.bootstrap.css" />
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+
 </body>
 <link type="text/css" rel="stylesheet" href="css/jquery.autocomplete.css" />
 <script src="js/jquery.autocomplete.js?1.0"></script>
