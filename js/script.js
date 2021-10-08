@@ -62,11 +62,17 @@ addBtn.addEventListener('click', function (e) {
 
         }
         document.querySelector('#antibiotique_1').value = "";
-        console.log(dataSet);
         //TODO Mettre à jour la datatable
-        $('#dataTable1').DataTable().ajax.reload();
+        $('#dataTable1').DataTable().destroy();
 
-
+        table = $('#dataTable1').DataTable({
+            data: dataSet,
+            columns: [
+                { title: "Germe" },
+                { title: "Antibiotique" },
+                { title: "résultat" } //TODO mettre un flat button pour supprimer
+            ]
+        });
 
 
     }
